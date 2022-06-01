@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerBed">
+   <left>
+      <AnchorPane prefHeight="415.0" prefWidth="231.0" style="-fx-background-color: #b58b00; -fx-border-color: #FFFFFF; -fx-border-width: 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="stolicky" layoutX="1.0" mnemonicParsing="false" onAction="#handleButtonAction3" prefHeight="85.0" prefWidth="230.0" style="-fx-border-color: #FFFFFF;" stylesheets="@../css/style.css" text="Stoličky" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="stoly" layoutX="1.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleButtonAction4" prefHeight="85.0" prefWidth="230.0" style="-fx-border-color: #FFFFFF;" stylesheets="@../css/style.css" text="Stoly" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="postele" layoutX="1.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleButtonAction5" prefHeight="85.0" prefWidth="230.0" style="-fx-border-color: #FFFFFF;" stylesheets="@../css/style.css" text="Postele" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="skrine" layoutX="1.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleButtonAction6" prefHeight="85.0" prefWidth="230.0" style="-fx-border-color: #FFFFFF;" stylesheets="@../css/style.css" text="Skrine" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="spat" layoutX="1.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleButtonAction1" prefHeight="85.0" prefWidth="230.0" style="-fx-border-color: #FFFFFF;" stylesheets="@../css/style.css" text="Späť" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="kosik" layoutX="1.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="85.0" prefWidth="230.0" style="-fx-border-color: #FFFFFF;" stylesheets="@../css/style.css" text="Košík" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Label fx:id="count" layoutX="192.0" layoutY="382.0" prefHeight="32.0" prefWidth="0.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="611.0" prefWidth="714.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a61200;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="551.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/logo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="111.0" fitWidth="258.0" layoutX="26.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Titul.png" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutX="100.0" layoutY="45.0" prefHeight="448.0" prefWidth="497.0" style="-fx-background-color: #FFFFFF;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="714.0" prefWidth="499.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <ImageView fitHeight="130.0" fitWidth="268.0" layoutX="14.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/postelEben.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="143.0" fitWidth="232.0" layoutX="29.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/postelSmrek.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="159.0" fitWidth="276.0" layoutX="29.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/postelDub.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="284.0" layoutY="58.0" text="Dubová posteľ" textFill="#867474">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="284.0" layoutY="281.0" text="Smreková posteľ" textFill="#867474">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="284.0" layoutY="532.0" text="Ebenová posteľ" textFill="#867474">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buyEbenBed" layoutX="389.0" layoutY="584.0" mnemonicParsing="false" onAction="#buyEbenBed" prefHeight="21.0" prefWidth="74.0" style="-fx-background-radius: 20;" stylesheets="@../css/buttons2.css" text="Kúpiť" />
+                        <Label fx:id="oakBedPrize" layoutX="284.0" layoutY="115.0" prefHeight="20.0" prefWidth="82.0" textFill="#867474">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="spruceBedPrize" layoutX="284.0" layoutY="333.0" prefHeight="20.0" prefWidth="82.0" textFill="#867474">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ebenBedPrize" layoutX="284.0" layoutY="587.0" prefHeight="20.0" prefWidth="82.0" textFill="#867474">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buyOakBed" layoutX="389.0" layoutY="106.0" mnemonicParsing="false" onAction="#buyOakBed" prefHeight="21.0" prefWidth="74.0" style="-fx-background-radius: 20;" stylesheets="@../css/buttons2.css" text="Kúpiť" />
+                        <Button fx:id="buySpruceBed" layoutX="389.0" layoutY="328.0" mnemonicParsing="false" onAction="#buySpruceBed" prefHeight="21.0" prefWidth="74.0" style="-fx-background-radius: 20;" stylesheets="@../css/buttons2.css" text="Kúpiť" />
+                        <Label fx:id="oakToCart" layoutX="81.0" layoutY="189.0" prefHeight="21.0" prefWidth="130.0" text="Pridané do košíka">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ebenToCart" layoutX="81.0" layoutY="673.0" prefHeight="21.0" prefWidth="130.0" text="Pridané do košíka">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="spruceToCart" layoutX="81.0" layoutY="423.0" prefHeight="21.0" prefWidth="130.0" text="Pridané do košíka">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="countEben" layoutX="284.0" layoutY="641.0" prefHeight="17.0" prefWidth="154.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="countSpruce" layoutX="284.0" layoutY="392.0" prefHeight="17.0" prefWidth="154.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="countOak" layoutX="284.0" layoutY="156.0" prefHeight="17.0" prefWidth="154.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="soldOak" layoutX="56.0" layoutY="75.0" prefHeight="45.0" prefWidth="160.0" text="Vypredané" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="soldSpruce" layoutX="59.0" layoutY="321.0" prefHeight="45.0" prefWidth="160.0" text="Vypredané" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="soldEben" layoutX="59.0" layoutY="558.0" prefHeight="45.0" prefWidth="160.0" text="Vypredané" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
